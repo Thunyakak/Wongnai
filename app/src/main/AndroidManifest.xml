@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="th.ac.kku.cis.lab.wongnai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".show_yt"></activity>
+        <activity android:name=".show_tw" />
+        <activity android:name=".show_ig" />
+        <activity android:name=".show_fb" />
+        <activity android:name=".Comment_page" />
+        <activity
+            android:name=".Information_Detail"
+            android:parentActivityName=".Main2Page" />
+        <activity
+            android:name=".Main2Page"
+            android:label="@string/title_activity_main2_page"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailPage"
+            android:parentActivityName=".AdminPage" />
+        <activity
+            android:name=".EditAdmin"
+            android:parentActivityName=".AdminPage" />
+        <activity android:name=".PostAdmin" />
+        <activity
+            android:name=".DrinkFood"
+            android:label="เครื่องดื่ม" />
+        <activity
+            android:name=".SweetFood"
+            android:label="ขนมหวาน" />
+        <activity
+            android:name=".savoryFood"
+            android:label="อาหารคาว" />
+        <activity
+            android:name=".AdminPage"
+            android:label="Admin" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

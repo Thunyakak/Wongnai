@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9ECB5"
+    tools:context=".Information_Detail">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:padding="10dp"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:background="@drawable/social_media"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp" />
+              <ImageView
+                  android:background="@drawable/logo_wongnai"
+                  android:layout_width="220dp"
+                  android:layout_height="200dp" />
+          </LinearLayout>
+          <TextView
+              android:textSize="25sp"
+              android:layout_gravity="center"
+              android:text="ดูข้อมูลเพิ่มเติมทางช่องทางตามนี้"
+              android:textStyle="bold"
+              android:layout_marginTop="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="0dp">
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:paddingLeft="70dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:background="@drawable/facebook"
+                      android:layout_width="75dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_height="75dp" />
+                  <ImageView
+                      android:background="@drawable/instagram"
+                      android:layout_width="75dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_height="75dp" />
+                  <ImageView
+                      android:background="@drawable/twitter"
+                      android:layout_width="75dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_height="75dp" />
+                  <ImageView
+                      android:background="@drawable/youtube"
+                      android:layout_width="75dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_height="75dp" />
+              </LinearLayout>
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:paddingLeft="20dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                  <Button
+                      android:id="@+id/btn_fb"
+                      android:textSize="30sp"
+                      android:layout_marginTop="20dp"
+                      android:text="FACEBOOK"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <Button
+                      android:id="@+id/btn_ig"
+                      android:textSize="30sp"
+                      android:layout_marginTop="30dp"
+                      android:text="INSTAGRAM"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <Button
+                      android:id="@+id/btn_tw"
+                      android:textSize="30sp"
+                      android:layout_marginTop="30dp"
+                      android:text="TWITTER"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <Button
+                      android:id="@+id/btn_yt"
+                      android:textSize="30sp"
+                      android:layout_marginTop="30dp"
+                      android:text="YOUTURB"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

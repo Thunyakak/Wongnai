@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".PostAdmin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_post"
+                android:background="@drawable/ic_add_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <EditText
+                android:id="@+id/name_menu"
+                android:layout_marginTop="10dp"
+                android:hint="ชื่อเมนู"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/component_menu"
+                android:layout_marginTop="10dp"
+                android:hint="ส่วนประกอบ"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/how_menu"
+                android:layout_marginTop="10dp"
+                android:hint="วิธีทำ"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/category_menu"
+                android:layout_marginTop="10dp"
+                android:hint="ประเภท"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_post"
+                android:textSize="25sp"
+                android:background="@drawable/btn_rounded"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:text="POST"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
